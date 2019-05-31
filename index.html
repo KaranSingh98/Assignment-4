@@ -15,20 +15,13 @@
         </div>
 
         <p> Rows </p>
-
-        <table id="table">
-            <tr id="myRow">
-                <td>First cell</td>
-            </tr>
-        </table> <br>
-
         <button onclick ="myFunction()"> + </button>
         <button> - </button>
 
 
         <p> Columns </p>
-        <button> + </button>
-        <button> - </button>
+        <button onclick="addColumn()"> + </button>
+        <button onclick="removeColumn()"> - </button>
 
         <p> Colors </p>
         <select> </select>
@@ -42,6 +35,12 @@
             </select>
         </form>
 
+        <table id="table">
+
+            <tr id="myRow"> <td> </td> </tr>
+
+        </table> <br>
+
     </body>
 
     <button> Fill all empty cells </button>
@@ -50,7 +49,7 @@
 
     <button> Clear </button>
 
-<script src ="index.js">
+<script src ="./index.js">
 
 
 </script>
