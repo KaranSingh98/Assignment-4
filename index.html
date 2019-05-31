@@ -2,6 +2,7 @@
 <html>
 
     <link rel="stylesheet" href="./index.css">
+    <script src="./index.js"> </script>
 
     <head>
         <title>
@@ -16,8 +17,8 @@
         <button> - </button>
 
         <p> Columns </p>
-        <button> + </button>
-        <button> - </button>
+        <button onclick="addColumn()"> + </button>
+        <button onclick="removeColumn()"> - </button>
 
         <p> Colors </p>
 
@@ -27,8 +28,8 @@
             <option value="blue"> Blue </option>
         </select>
 
-        <table border="1">
-            
+        <table border="1" id="table">
+
         </table>
 
     </body>
