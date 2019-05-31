@@ -2,7 +2,6 @@
 <html>
 
     <link rel="stylesheet" href="./index.css">
-    <script src="./index.js"> </script>
 
     <head>
         <title>
@@ -11,28 +10,36 @@
     </head>
 
     <body>
+        <div class = "box">
+
+        </div>
 
         <p> Rows </p>
-        <button> + </button>
+        <button onclick ="myFunction()"> + </button>
         <button> - </button>
+
 
         <p> Columns </p>
         <button onclick="addColumn()"> + </button>
         <button onclick="removeColumn()"> - </button>
 
         <p> Colors </p>
+        <select> </select>
 
-        <select>
-            <option value="red"> Red </option>
-            <option value="white"> White </option>
-            <option value="blue"> Blue </option>
-        </select>
+        <form>
 
-        <table border="1" id="table">
+            <select>
+                <option value="red"> Red </option>
+                <option value="white"> White </option>
+                <option value="blue"> Blue </option>
+            </select>
+        </form>
 
-            <tr> <td> </td> </tr>
+        <table id="table">
 
-        </table>
+            <tr id="myRow"> <td> </td> </tr>
+
+        </table> <br>
 
     </body>
 
@@ -42,4 +49,8 @@
 
     <button> Clear </button>
 
+<script src ="./index.js">
+
+
+</script>
 </html>
