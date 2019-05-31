@@ -24,3 +24,10 @@ function removeColumn() {
         table.rows[i].deleteCell(-1);
     }
 }
+
+function colorSet(color) {
+
+    newColor = color;
+
+    return newColor;
+}
