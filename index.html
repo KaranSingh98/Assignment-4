@@ -24,20 +24,19 @@
         <button onclick="removeColumn()"> - </button>
 
         <p> Colors </p>
-        <select> </select>
 
         <form>
 
             <select>
                 <option value="red" onclick="colorSet('red')"> Red </option>
-                <option value="white" onClick="colorSet('white')"> White </option>
+                <option value="white" onclick="colorSet('white')"> White </option>
                 <option value="blue" onclick="colorSet('blue')"> Blue </option>
             </select>
         </form>
 
-        <table id="table">
+        <table id="table" onclick="colorCell()">
 
-            <tr id="myRow"> <td> </td> </tr>
+            <tr> <td> </td> </tr>
 
         </table> <br>
 
