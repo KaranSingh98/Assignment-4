@@ -77,7 +77,13 @@ function fillEmpty() {
 
         for(let j = 0; j < table.rows[i].cells.length; j++) {
 
-            if(table.rows[i].cells[j].style.backgroundColor === 'lightgrey') {
+            let curCell = table.rows[i].cells[j];
+
+            let curColor = window.getComputedStyle(curCell).getPropertyValue('background-color');
+
+            console.log(curColor);
+
+            if(curColor === 'rgb(211, 211, 211)') {
 
                 table.rows[i].cells[j].style.backgroundColor = colorSet();
             }
