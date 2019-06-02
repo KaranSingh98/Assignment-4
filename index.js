@@ -1,4 +1,3 @@
-
 function addRow() {
 
     let table = document.getElementById('table');
@@ -42,7 +41,6 @@ function removeColumn() {
     }
 
 }
-
 
 function colorSet(){
 
