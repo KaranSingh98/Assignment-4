@@ -1,4 +1,5 @@
 <!doctype html>
+
 <html>
 
     <link rel="stylesheet" href="./index.css">
@@ -24,21 +25,15 @@
         <button onclick="removeColumn()"> - </button>
 
         <p> Colors </p>
-        <select> </select>
 
-        <form>
+        <select id="colors" onchange="colorSet()">
+            <option value="red"> Red </option>
+            <option value="white"> White </option>
+            <option value="blue"> Blue </option>
+        </select>
 
-            <select>
-                <option value="red"> Red </option>
-                <option value="white"> White </option>
-                <option value="blue"> Blue </option>
-            </select>
-        </form>
-
-        <table id="table">
-
-            <tr id="myRow"> <td> </td> </tr>
-
+        <table id="table" onclick="colorCell()" ondrag="colorCell()">
+            <tr> <td> </td> </tr>
         </table> <br>
 
     </body>
