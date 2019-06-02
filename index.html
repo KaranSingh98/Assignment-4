@@ -1,4 +1,5 @@
 <!doctype html>
+
 <html>
 
     <link rel="stylesheet" href="./index.css">
@@ -25,19 +26,14 @@
 
         <p> Colors </p>
 
-        <form>
+        <select id="colors" onchange="colorSet()">
+            <option value="red"> Red </option>
+            <option value="white"> White </option>
+            <option value="blue"> Blue </option>
+        </select>
 
-            <select>
-                <option value="red" onclick="colorSet('red')"> Red </option>
-                <option value="white" onclick="colorSet('white')"> White </option>
-                <option value="blue" onclick="colorSet('blue')"> Blue </option>
-            </select>
-        </form>
-
-        <table id="table" onclick="colorCell()">
-
+        <table id="table" onclick="colorCell()" ondrag="colorCell()">
             <tr> <td> </td> </tr>
-
         </table> <br>
 
     </body>
