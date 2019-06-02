@@ -1,8 +1,21 @@
+function addRow() {
 
-function myFunction() {
-  var row = document.getElementById("myRow");
-  var x = row.insertCell(0);
-  x.innerHTML = "";
+    let table = document.getElementById('table');
+
+    let newRow = table.insertRow(-1);
+
+    for(let i = 0; i < table.rows[0].cells.length; i++) {
+
+        newRow.insertCell(i);
+    }
+}
+
+function removeRow() {
+
+    let table = document.getElementById('table');
+
+    if(table.rows.length > 1)
+        table.deleteRow(-1);
 }
 
 function addColumn() {
@@ -21,10 +34,13 @@ function removeColumn() {
 
     for(let i = 0; i < table.rows.length; i++) {
 
-        table.rows[i].deleteCell(-1);
+        if(i === 0 && table.rows[0].cells.length === 1)
+            return;
+        else
+            table.rows[i].deleteCell(-1);
     }
-}
 
+}
 
 function colorSet(){
 
