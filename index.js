@@ -1,8 +1,20 @@
 
-function myFunction() {
-  var row = document.getElementById("myRow");
-  var x = row.insertCell(0);
-  x.innerHTML = "";
+function addRow() {
+
+    let table = document.getElementById('table');
+
+    let newRow = table.insertRow(-1);
+
+    for(let i = 0; i < table.rows[0].cells.length; i++) {
+
+        newRow.insertCell(i);
+    }
+}
+
+function removeRow() {
+
+
+
 }
 
 function addColumn() {
