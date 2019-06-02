@@ -81,8 +81,6 @@ function fillEmpty() {
 
             let curColor = window.getComputedStyle(curCell).getPropertyValue('background-color');
 
-            console.log(curColor);
-
             if(curColor === 'rgb(211, 211, 211)') {
 
                 table.rows[i].cells[j].style.backgroundColor = colorSet();
