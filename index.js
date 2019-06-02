@@ -55,3 +55,45 @@ function colorCell() {
 
     cell.style.backgroundColor = colorSet();
 }
+
+function fillAll() {
+
+    let table = document.getElementById('table');
+
+    for(let i = 0; i < table.rows.length; i++) {
+
+        for(let j = 0; j < table.rows[i].cells.length; j++) {
+
+            table.rows[i].cells[j].style.backgroundColor = colorSet();
+        }
+    }
+}
+
+function fillEmpty() {
+
+    let table = document.getElementById('table');
+
+    for(let i = 0; i < table.rows.length; i++) {
+
+        for(let j = 0; j < table.rows[i].cells.length; j++) {
+
+            if(table.rows[i].cells[j].style.backgroundColor === 'lightgrey') {
+
+                table.rows[i].cells[j].style.backgroundColor = colorSet();
+            }
+        }
+    }
+}
+
+function clearAll() {
+
+    let table = document.getElementById('table');
+
+    for(let i = 0; i < table.rows.length; i++) {
+
+        for(let j = 0; j < table.rows[i].cells.length; j++) {
+
+            table.rows[i].cells[j].style.backgroundColor = 'lightgrey';
+        }
+    }
+}
