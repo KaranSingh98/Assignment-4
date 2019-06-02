@@ -13,8 +13,10 @@ function addRow() {
 
 function removeRow() {
 
+    let table = document.getElementById('table');
 
-
+    if(table.rows.length > 1)
+        table.deleteRow(-1);
 }
 
 function addColumn() {
@@ -33,8 +35,12 @@ function removeColumn() {
 
     for(let i = 0; i < table.rows.length; i++) {
 
-        table.rows[i].deleteCell(-1);
+        if(i === 0 && table.rows[0].cells.length === 1)
+            return;
+        else
+            table.rows[i].deleteCell(-1);
     }
+
 }
 
 
