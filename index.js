@@ -26,15 +26,16 @@ function removeColumn() {
 }
 
 
-function colorSet(color){
+function colorSet(){
 
-    console.log(color);
-    return color;
+    let menu = document.getElementById('colors');
+
+    return menu.options[menu.selectedIndex].value;
 }
 
 function colorCell() {
 
     let cell = event.target;
 
-    cell.style.backgroundColor = 'colorSet()';
+    cell.style.backgroundColor = colorSet();
 }
